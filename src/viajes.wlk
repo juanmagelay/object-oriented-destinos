@@ -53,8 +53,5 @@ class Gimnasia inherits Actividad {
 	override method sirveParaBroncearse() { return false }
 }
 
-class Socio {
-	
-}
 
 
