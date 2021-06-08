@@ -1,0 +1,12 @@
+import viajes.*
+
+test "Viajes" {
+	var ecc = new ExcursionACiudad(cantAtracciones = 6)
+	assert.equals(ecc.diasDeActividad(), 3)
+	assert.that(ecc.esfuerzo())
+	assert.notThat(ecc.sirveParaBroncearse())
+	
+	var ect = new ExcursionACiudadTropical(cantAtracciones = 6)
+	assert.equals(ect.diasDeActividad(), 4)
+	assert.that(ect.sirveParaBroncearse())
+}
